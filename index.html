@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edwin Esdi Verrincón — Ingeniero Electrónico</title>
-  <meta name="description" content="Ingeniero Electrónico y Especialista en Manufactura Aditiva. Apasionado por la impresión 3D, escaneo 3D y corte láser. Bogotá, Colombia." />
+  <title>Edwin Rincón Aldana — Electronic Engineer</title>
+  <meta name="description" content="Electronic Engineer & Additive Manufacturing Specialist. Frankfurt am Main." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -15,31 +15,51 @@
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-logo">eerincona<span class="accent">.</span></span>
-      <ul class="nav-links">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"     data-i18n="nav_about">Sobre mí</a></li>
+        <li><a href="#experience" data-i18n="nav_exp">Experiencia</a></li>
+        <li><a href="#skills"    data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#education" data-i18n="nav_edu">Formación</a></li>
+        <li><a href="#contact"   data-i18n="nav_contact">Contacto</a></li>
       </ul>
-      <button class="hamburger" id="menuBtn" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+        <button class="hamburger" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-content">
-      <div class="hero-badge">📍 Bogotá, Colombia</div>
-      <h1>Hola, soy <span class="accent">Edwin</span><br />Esdi Verrincón</h1>
-      <p class="hero-subtitle">Ingeniero Electrónico &amp; Especialista en Manufactura Aditiva</p>
-      <p class="hero-desc">Apasionado por la impresión 3D, el escaneo 3D y el corte láser. Transformo ideas en realidad física con tecnología de vanguardia.</p>
+      <div class="hero-badge">📍 Frankfurt am Main, Deutschland</div>
+      <h1>Edwin<br /><span class="accent">Rincón Aldana</span></h1>
+      <p class="hero-subtitle" data-i18n="hero_title">Ingeniero Electrónico · Especialista en Manufactura Aditiva</p>
+      <p class="hero-desc" data-i18n="hero_desc">Ingeniero Electrónico (B.Sc., ZAB-anerkannt) con más de 5 años de experiencia en sistemas embebidos, automatización industrial y fabricación aditiva. Disponible de inmediato en Frankfurt am Main.</p>
+      <div class="hero-tags">
+        <span class="tag">C / C++</span>
+        <span class="tag">Python</span>
+        <span class="tag">MATLAB / Simulink</span>
+        <span class="tag">SPS / TIA Portal</span>
+        <span class="tag">FDM · SLA · SLS</span>
+        <span class="tag">3D-Scanning</span>
+      </div>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-        <a href="#contact" class="btn btn-outline">Contactar</a>
+        <a href="#experience" class="btn btn-primary" data-i18n="hero_cta1">Ver experiencia</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta2">Contactar</a>
       </div>
       <div class="hero-social">
         <a href="https://github.com/Eerincona" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/edwin-rincon-aldana" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </a>
         <a href="https://twitter.com/eerincona" target="_blank" rel="noopener" aria-label="Twitter/X">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -48,80 +68,234 @@
     </div>
     <div class="hero-visual">
       <div class="avatar-ring">
-        <img src="https://avatars.githubusercontent.com/u/51174833?v=4" alt="Edwin Esdi Verrincón" class="avatar" />
+        <img src="https://avatars.githubusercontent.com/u/51174833?v=4" alt="Edwin Rincón Aldana" class="avatar" />
       </div>
-      <div class="floating-card card-1"><span>🖨️</span><span>Impresión 3D</span></div>
-      <div class="floating-card card-2"><span>⚡</span><span>Electrónica</span></div>
-      <div class="floating-card card-3"><span>🔬</span><span>Escaneo 3D</span></div>
+      <div class="floating-card card-1"><span>🖨️</span><span data-i18n="fc1">Manufactura Aditiva</span></div>
+      <div class="floating-card card-2"><span>⚡</span><span data-i18n="fc2">Ingeniería Electrónica</span></div>
+      <div class="floating-card card-3"><span>🔬</span><span data-i18n="fc3">Escaneo 3D</span></div>
     </div>
     <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
+  <!-- ABOUT -->
   <section id="about">
     <div class="container">
-      <h2 class="section-title">Sobre <span class="accent">mí</span></h2>
+      <h2 class="section-title" data-i18n="about_title">Sobre <span class="accent">mí</span></h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>Soy Ingeniero Electrónico con especialización en Manufactura Aditiva, con sede en Bogotá, Colombia. Mi trabajo se centra en la intersección entre la ingeniería electrónica y las tecnologías de fabricación digital.</p>
-          <p>Me apasiona explorar las posibilidades ilimitadas de la impresión 3D, el escaneo 3D y el corte láser — tecnologías que están redefiniendo cómo diseñamos, prototipamos y fabricamos objetos.</p>
-          <p>Creo en el poder de la tecnología para transformar ideas abstractas en soluciones físicas concretas y funcionales.</p>
+          <p data-i18n="about_p1">Ingeniero Electrónico (B.Sc.) con reconocimiento ZAB alemán (Ref. LN2024/45743-1, Bonn, 10.2024) y más de 5 años de experiencia profesional continua en Arrow Technology Information S.A.S., donde progresé de Especialista en Soporte Técnico a Senior Application Engineer &amp; AM Engineer.</p>
+          <p data-i18n="about_p2">Mi experiencia abarca sistemas embebidos, automatización industrial (SPS/PLC, TIA Portal, CODESYS), programación en C/C++ y Python, y manufactura aditiva avanzada — incluyendo FDM, SLA, SLS y extrusión de pellets (FGF).</p>
+          <p data-i18n="about_p3">Actualmente vivo en Frankfurt am Main, con disponibilidad inmediata. Alemán B1 en activa formación (ZDSK Frankfurt), Inglés B2, Español C2 nativo.</p>
         </div>
         <div class="about-stats">
-          <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Repositorios públicos</div></div>
-          <div class="stat-card"><div class="stat-num">2019</div><div class="stat-label">En GitHub desde</div></div>
-          <div class="stat-card"><div class="stat-num">3D</div><div class="stat-label">Especialidad principal</div></div>
-          <div class="stat-card"><div class="stat-num">COL</div><div class="stat-label">Bogotá, Colombia</div></div>
+          <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label" data-i18n="stat1">Años de experiencia</div></div>
+          <div class="stat-card"><div class="stat-num">ZAB</div><div class="stat-label" data-i18n="stat2">Título reconocido en Alemania</div></div>
+          <div class="stat-card"><div class="stat-num">3</div><div class="stat-label" data-i18n="stat3">Idiomas (ES · EN · DE)</div></div>
+          <div class="stat-card"><div class="stat-num">B1+</div><div class="stat-label" data-i18n="stat4">Alemán — en formación</div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills">
+  <!-- EXPERIENCE -->
+  <section id="experience">
     <div class="container">
-      <h2 class="section-title">Habilidades &amp; <span class="accent">Tecnologías</span></h2>
-      <div class="skills-grid">
-        <div class="skill-category"><h3>⚡ Ingeniería Electrónica</h3><ul><li>Diseño de circuitos</li><li>Sistemas embebidos</li><li>Microcontroladores</li><li>Electrónica de potencia</li><li>PCB Design</li></ul></div>
-        <div class="skill-category"><h3>🖨️ Manufactura Aditiva</h3><ul><li>Impresión 3D FDM/FFF</li><li>Impresión 3D SLA/Resina</li><li>Slicing &amp; parámetros</li><li>Materiales y filamentos</li><li>Post-procesado</li></ul></div>
-        <div class="skill-category"><h3>🔬 Digitalización 3D</h3><ul><li>Escaneo 3D</li><li>Fotogrametría</li><li>Procesado de nube de puntos</li><li>Ingeniería inversa</li><li>Control de calidad</li></ul></div>
-        <div class="skill-category"><h3>✂️ Fabricación Digital</h3><ul><li>Corte láser</li><li>CNC routing</li><li>CAD / Modelado 3D</li><li>Prototipado rápido</li><li>Diseño para fabricación</li></ul></div>
-        <div class="skill-category"><h3>💻 Software &amp; Herramientas</h3><ul><li>Fusion 360 / SolidWorks</li><li>Cura / PrusaSlicer</li><li>Meshmixer / MeshLab</li><li>Arduino / PlatformIO</li><li>GitHub</li></ul></div>
-        <div class="skill-category"><h3>🎯 Soft Skills</h3><ul><li>Pensamiento creativo</li><li>Resolución de problemas</li><li>Trabajo en equipo</li><li>Aprendizaje continuo</li><li>Comunicación técnica</li></ul></div>
+      <h2 class="section-title" data-i18n="exp_title">Experiencia <span class="accent">Profesional</span></h2>
+      <p class="section-sub" data-i18n="exp_sub">Arrow Technology Information S.A.S. · Bogotá, Colombia</p>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-title" data-i18n="job3_title">Senior AM Engineer &amp; Application Engineer</div>
+                <div class="job-company">Arrow Technology Information S.A.S.</div>
+              </div>
+              <div class="job-date">Sep 2025 – Mar 2026</div>
+            </div>
+            <ul class="job-bullets">
+              <li data-i18n="job3_b1">Liderazgo técnico en implementación de sistemas de manufactura aditiva industriales (FDM, SLA, SLS, FGF) para clientes corporativos e institucionales en Colombia.</li>
+              <li data-i18n="job3_b2">Consultoría técnica y application engineering en procesos pre-venta y post-venta (B2B/B2C).</li>
+              <li data-i18n="job3_b3">Escaneo 3D avanzado e ingeniería inversa para documentación, control de calidad y rediseño de piezas.</li>
+              <li data-i18n="job3_b4">I+D con materiales avanzados: polímeros reciclados, biopolímeros y materiales compuestos.</li>
+              <li data-i18n="job3_b5">Representación de la empresa en ferias tecnológicas y demostraciones educativas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-title" data-i18n="job2_title">Chief Application Engineer</div>
+                <div class="job-company">Arrow Technology Information S.A.S.</div>
+              </div>
+              <div class="job-date">Mar 2023 – Aug 2025</div>
+            </div>
+            <ul class="job-bullets">
+              <li data-i18n="job2_b1">Integración de sistemas e inbetriebnahme: despliegue y calibración de sistemas de control electrónico — verificación de controladores embebidos, integración de sensores y validación de procesos en sitio.</li>
+              <li data-i18n="job2_b2">Programación en C/C++ y Python para adquisición de datos, reportes automáticos y monitoreo de procesos; MATLAB/Simulink para modelado y simulación de control.</li>
+              <li data-i18n="job2_b3">Estandarización de protocolos multi-vendor: reducción de fallos críticos en un 35%, aumento de eficiencia de soporte en un 40%.</li>
+              <li data-i18n="job2_b4">Diseño e impartición de programas de formación técnica para ingenieros y técnicos.</li>
+              <li data-i18n="job2_b5">Implementación de sistema de monitoreo remoto IoT con backend Python, integración LAN/WLAN y dashboard en tiempo real.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <div class="job-title" data-i18n="job1_title">Especialista en Soporte Técnico</div>
+                <div class="job-company">Arrow Technology Information S.A.S.</div>
+              </div>
+              <div class="job-date">Nov 2021 – Feb 2023</div>
+            </div>
+            <ul class="job-bullets">
+              <li data-i18n="job1_b1">Diagnóstico y reparación a nivel de placa de unidades de control industriales; interacción con firmware a nivel C para calibración de sensores y control de actuadores.</li>
+              <li data-i18n="job1_b2">Soporte técnico 1st/2nd level: configuración de equipos, diagnóstico de fallos y formación a usuarios finales en sitio y de forma remota.</li>
+              <li data-i18n="job1_b3">Coordinación de logística de repuestos para despliegues críticos en campo; implementación de sistemas de monitoreo remoto con hardware embebido e IoT.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title" data-i18n="skills_title">Habilidades &amp; <span class="accent">Tecnologías</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>💻 <span data-i18n="sk1_title">Programación</span></h3>
+          <ul><li>C / C++ (OOP, estructuras de datos)</li><li>Python · Automatización</li><li>MATLAB / Simulink</li><li>LabVIEW · Adquisición de datos</li><li>Git · Control de versiones</li></ul>
+        </div>
+        <div class="skill-category">
+          <h3>⚡ <span data-i18n="sk2_title">Ingeniería &amp; Control</span></h3>
+          <ul><li>SPS / TIA Portal / CODESYS</li><li>Sistemas embebidos (C/C++)</li><li>Procesamiento digital de señales</li><li>Control PID · Automatización</li><li>CAD: Fusion 360 · AutoCAD</li></ul>
+        </div>
+        <div class="skill-category">
+          <h3>🖨️ <span data-i18n="sk3_title">Manufactura Aditiva</span></h3>
+          <ul><li>FDM / FFF · SLA · LCD/DLP</li><li>SLS · FGF (extrusión de pellets)</li><li>Slicing &amp; optimización de parámetros</li><li>Post-procesado y acabados</li><li>Polímeros, biopolímeros, composites</li></ul>
+        </div>
+        <div class="skill-category">
+          <h3>🔬 <span data-i18n="sk4_title">Digitalización 3D</span></h3>
+          <ul><li>Escaneo 3D industrial</li><li>Ingeniería inversa</li><li>Fotogrametría</li><li>Control de calidad dimensional</li><li>Procesado de nube de puntos</li></ul>
+        </div>
+        <div class="skill-category">
+          <h3>🌐 <span data-i18n="sk5_title">IT &amp; Redes</span></h3>
+          <ul><li>IT-Support &amp; Helpdesk (1st/2nd Level)</li><li>Redes: TCP/IP, LAN/WLAN</li><li>Administración Windows</li><li>Diagnóstico &amp; reparación hardware</li><li>Remote-Monitoring &amp; IoT</li></ul>
+        </div>
+        <div class="skill-category">
+          <h3>🌍 <span data-i18n="sk6_title">Idiomas</span></h3>
+          <ul><li>Español — C2 Nativo</li><li>Inglés — B2 CEFR (profesional)</li><li>Alemán — B1 CEFR (en formación)</li><li>ZDSK Frankfurt · 2025–presente</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title" data-i18n="edu_title">Formación &amp; <span class="accent">Certificaciones</span></h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <div class="edu-degree" data-i18n="edu1_degree">B.Sc. Ingeniería Electrónica</div>
+            <div class="edu-school" data-i18n="edu1_school">Colombia · 2023</div>
+            <div class="edu-note" data-i18n="edu1_note">Reconocimiento ZAB — Bonn, 10.2024 · Ref: LN2024/45743-1</div>
+            <div class="edu-tags">
+              <span class="tag-sm">Sistemas Embebidos</span><span class="tag-sm">C/C++</span><span class="tag-sm">DSP</span><span class="tag-sm">SPS/PLC</span><span class="tag-sm">MATLAB</span><span class="tag-sm">CAD/CAM</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card highlight">
+          <div class="edu-icon">🏆</div>
+          <div class="edu-body">
+            <div class="edu-degree" data-i18n="proj_title">Proyecto Destacado: Automatización Proceso Industrial</div>
+            <div class="edu-school" data-i18n="proj_sub">Planta de Biodiesel · Trabajo de Grado B.Sc. 2022–2023</div>
+            <div class="edu-note" data-i18n="proj_note">Implementación de algoritmos PID vía SPS (ABB AC1131) en Structured Text (IEC 61131-3). Dashboard HMI en LabVIEW y CODESYS. Simulación y validación del lazo de control completo en MATLAB/Simulink antes de puesta en marcha del hardware.</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📜</div>
+          <div class="edu-body">
+            <div class="edu-degree" data-i18n="cert1">Certificado: Diseño &amp; Impresión 3D</div>
+            <div class="edu-school">Domestika · 04.2022</div>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">🇩🇪</div>
+          <div class="edu-body">
+            <div class="edu-degree" data-i18n="cert2">Curso de Alemán B1+</div>
+            <div class="edu-school" data-i18n="cert2_sub">ZDSK Frankfurt · 2025–presente</div>
+            <div class="edu-note" data-i18n="cert2_note">Formación diaria activa en Frankfurt am Main</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Proyectos en <span class="accent">GitHub</span></h2>
-      <p class="section-sub">Mis repositorios públicos — actualizados en tiempo real desde la API de GitHub.</p>
+      <h2 class="section-title" data-i18n="proj_gh_title">Proyectos en <span class="accent">GitHub</span></h2>
+      <p class="section-sub" data-i18n="proj_gh_sub">Repositorios públicos — cargados en tiempo real desde la API de GitHub.</p>
       <div id="projects-grid" class="projects-grid">
         <div class="project-skeleton"></div>
         <div class="project-skeleton"></div>
         <div class="project-skeleton"></div>
       </div>
       <div class="projects-cta">
-        <a href="https://github.com/Eerincona" target="_blank" rel="noopener" class="btn btn-outline">Ver todos en GitHub →</a>
+        <a href="https://github.com/Eerincona" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="proj_gh_btn">Ver todos en GitHub →</a>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">¡Hablemos! <span class="accent">Contacto</span></h2>
-      <p class="section-sub">¿Tienes un proyecto interesante? ¿Quieres colaborar? Estoy disponible para nuevas oportunidades.</p>
+      <h2 class="section-title" data-i18n="contact_title">¡Hablemos! <span class="accent">Contacto</span></h2>
+      <p class="section-sub" data-i18n="contact_sub">¿Tienes un proyecto o una oportunidad? Estoy disponible de inmediato en Frankfurt am Main.</p>
       <div class="contact-grid">
         <div class="contact-info">
-          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><a href="mailto:edwinesdiverrincon@gmail.com" class="contact-value">edwinesdiverrincon@gmail.com</a></div></div>
-          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Ubicación</div><span class="contact-value">Bogotá, Colombia</span></div></div>
-          <div class="contact-item"><div class="contact-icon">🐙</div><div><div class="contact-label">GitHub</div><a href="https://github.com/Eerincona" target="_blank" rel="noopener" class="contact-value">@Eerincona</a></div></div>
-          <div class="contact-item"><div class="contact-icon">🐦</div><div><div class="contact-label">Twitter / X</div><a href="https://twitter.com/eerincona" target="_blank" rel="noopener" class="contact-value">@eerincona</a></div></div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div><div class="contact-label">Email</div><a href="mailto:eerincona@gmail.com" class="contact-value">eerincona@gmail.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div><div class="contact-label">Telefon</div><a href="tel:+4916388447" class="contact-value">+49 163 8844772</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div><div class="contact-label" data-i18n="c_location">Ubicación</div><span class="contact-value">HeideStr. 119, 60385 Frankfurt am Main</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div><div class="contact-label">LinkedIn</div><a href="https://linkedin.com/in/edwin-rincon-aldana" target="_blank" rel="noopener" class="contact-value">edwin-rincon-aldana</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div><div class="contact-label">GitHub</div><a href="https://github.com/Eerincona" target="_blank" rel="noopener" class="contact-value">@Eerincona</a></div>
+          </div>
+          <div class="avail-badge">
+            <span class="avail-dot"></span>
+            <span data-i18n="avail">Disponible inmediatamente</span>
+          </div>
         </div>
         <form class="contact-form" id="contactForm">
-          <div class="form-group"><label for="name">Nombre</label><input type="text" id="name" name="name" placeholder="Tu nombre" required /></div>
+          <div class="form-group"><label for="name" data-i18n="f_name">Nombre</label><input type="text" id="name" name="name" required /></div>
           <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tu@email.com" required /></div>
-          <div class="form-group"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea></div>
-          <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
-          <p class="form-note">* El formulario abrirá tu cliente de correo.</p>
+          <div class="form-group"><label for="message" data-i18n="f_msg">Mensaje</label><textarea id="message" name="message" rows="5" required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full" data-i18n="f_send">Enviar mensaje</button>
+          <p class="form-note" data-i18n="f_note">* Abrirá tu cliente de correo.</p>
         </form>
       </div>
     </div>
@@ -129,8 +303,8 @@
 
   <footer>
     <div class="container">
-      <p>© 2025 Edwin Esdi Verrincón · Hecho con ❤️ en Bogotá, Colombia</p>
-      <p class="footer-sub">Alojado gratuitamente en <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
+      <p>© 2026 Edwin Esdiver Rincón Aldana · Frankfurt am Main</p>
+      <p class="footer-sub"><span data-i18n="footer_hosted">Alojado gratuitamente en</span> <a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages</a></p>
     </div>
   </footer>
 
