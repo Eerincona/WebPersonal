@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#dedbd3;font-family:'Space Grotesk',system-ui,sans-serif}
+.dv-turn{padding:44px 48px 36px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 24px}
+.dv-tid{font:600 10px 'IBM Plex Mono',monospace;padding:4px 8px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none;letter-spacing:.05em}
+.dv-tname{font:500 13px/1.3 'Space Grotesk',sans-serif;color:#2a2a28}
+.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:11px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px 'IBM Plex Mono',monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none;letter-spacing:.04em}
+.dv-olabel{display:flex;align-items:baseline;gap:9px;font:400 11.5px/1.35 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5);text-transform:uppercase;letter-spacing:.06em}
+.dv-card{max-width:100%;border-radius:4px;box-shadow:0 12px 34px -12px rgba(0,0,0,.4);overflow:hidden}
+.dv-opt:target .dv-oid{background:#EC7A2C;color:#fff}
+.dv-next{margin:26px 0 0;font:400 12px/1.6 'IBM Plex Mono',monospace;color:rgba(0,0,0,.5)}
+.dv-next a{color:#1a1a1a}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes scanline{0%{transform:translateY(-40px)}100%{transform:translateY(1040px)}}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Tres direcciones de hero — el momento de los primeros 5 segundos</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Werkstatt · base oscura industrial + ámbar de tobera</div>
+<div class="dv-card">
+<div style="width:900px;min-height:1010px;background:#141613;color:#EDEBE6;font-family:'Space Grotesk',sans-serif;position:relative;overflow:hidden">
+<div style="position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:45px 45px;opacity:.6;pointer-events:none"></div>
+<div style="position:absolute;right:0;bottom:0;width:340px;height:280px;pointer-events:none;opacity:.5">
+<div style="position:absolute;right:40px;bottom:60px;width:200px;height:1px;background:rgba(236,122,44,.4)"></div>
+<div style="position:absolute;right:40px;bottom:60px;width:1px;height:120px;background:rgba(236,122,44,.4)"></div>
+<div style="position:absolute;right:120px;bottom:60px;width:1px;height:80px;background:rgba(236,122,44,.3)"></div>
+<div style="position:absolute;right:36px;bottom:56px;width:9px;height:9px;border-radius:50%;background:#EC7A2C"></div>
+<div style="position:absolute;right:116px;bottom:136px;width:7px;height:7px;border-radius:50%;border:1px solid rgba(236,122,44,.55)"></div>
+</div>
+
+<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:22px 36px;border-bottom:1px solid rgba(255,255,255,.09)">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="width:40px;height:40px;border:1px solid rgba(236,122,44,.7);display:flex;align-items:center;justify-content:center;font:600 14px 'Saira Condensed',sans-serif;letter-spacing:.08em;color:#EC7A2C">ERA</div>
+<div style="line-height:1.25"><div style="font:600 13px 'Space Grotesk';letter-spacing:.02em">Edwin Rincón Aldana</div><div style="font:400 10px 'IBM Plex Mono',monospace;letter-spacing:.16em;text-transform:uppercase;color:#8f9088">Electronic Engineer</div></div>
+</div>
+<div style="display:flex;align-items:center;gap:26px">
+<div style="display:flex;gap:22px;font:500 12px 'Space Grotesk';color:#b9b8b1">
+<span>Work</span><span>Machines</span><span>About</span>
+</div>
+<div style="display:flex;align-items:center;gap:6px;font:500 11px 'IBM Plex Mono',monospace">
+<span style="color:#EC7A2C;border-bottom:1px solid #EC7A2C;padding-bottom:2px">EN</span><span style="color:#6d6e67">DE</span><span style="color:#6d6e67">ES</span>
+</div>
+</div>
+</div>
+
+<div style="position:relative;display:grid;grid-template-columns:1.62fr 1fr;min-height:900px">
+<div style="padding:60px 40px 40px 36px;display:flex;flex-direction:column">
+<div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.2em;text-transform:uppercase;color:#EC7A2C;margin-bottom:26px">Industrial Additive Manufacturing</div>
+<h1 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:80px;line-height:.92;letter-spacing:.005em;text-transform:uppercase;color:#F4F2ED">I don't just<br>run 3D printers.<br><span style="color:#EC7A2C">I engineer them.</span></h1>
+<p style="max-width:420px;margin:30px 0 0;font-family:'IBM Plex Serif',serif;font-size:17px;line-height:1.62;color:#c7c6bf">4+ years of field engineering and technical support in additive manufacturing — <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:#EDEBE6">FDM/FFF · SLA · LCD resin</span> — down to the embedded electronics, PLC and firmware that drive the machines.</p>
+
+<div style="display:flex;align-items:flex-end;gap:30px;margin-top:42px;padding-top:26px;border-top:1px solid rgba(255,255,255,.1)">
+<div><div style="font-family:'Saira Condensed',sans-serif;font-weight:700;font-size:58px;line-height:.85;color:#EC7A2C">+35%</div></div>
+<div style="font:400 13px/1.5 'Space Grotesk';color:#a9a8a1;max-width:230px">operational productivity in technical support, in 12 months — and founded the engineering &amp; research unit.</div>
+</div>
+
+<div style="display:flex;gap:14px;margin-top:40px">
+<div style="padding:14px 24px;background:#EC7A2C;color:#141613;font:600 13px 'Space Grotesk';letter-spacing:.01em;display:flex;align-items:center;gap:9px">Download CV — AM <span style="font-family:'IBM Plex Mono',monospace;font-size:11px">↓ PDF</span></div>
+<div style="padding:14px 24px;border:1px solid rgba(255,255,255,.28);color:#EDEBE6;font:600 13px 'Space Grotesk'">Get in touch</div>
+</div>
+
+<div style="margin-top:auto;padding-top:44px;display:flex;align-items:center;gap:20px;font:400 11px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#8f9088;text-transform:uppercase">
+<span style="display:flex;align-items:center;gap:7px"><span style="width:8px;height:8px;border-radius:50%;background:#5FD08A;box-shadow:0 0 9px #5FD08A;animation:blink 2s infinite"></span>Open to work · DACH</span>
+<span style="color:#4a4b45">/</span><span>Frankfurt am Main</span><span style="color:#4a4b45">/</span><span>Chancenkarte</span><span style="color:#4a4b45">/</span><span>DE B1</span>
+</div>
+</div>
+
+<div style="position:relative;border-left:1px solid rgba(255,255,255,.09);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 6px);display:flex;flex-direction:column">
+<div style="padding:22px 24px;border-bottom:1px solid rgba(255,255,255,.09);font:400 10px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#7f8079;background:#141613">Job monitor · live</div>
+<div style="padding:20px 24px;font-family:'IBM Plex Mono',monospace;font-size:11.5px;line-height:1.9;color:#a9a8a1;background:rgba(20,22,19,.85)">
+<div style="color:#EC7A2C">; layer 128 / 240</div>
+<div>G1 X128.40 Y96.02 Z25.60</div>
+<div>G1 F2400 E3.115</div>
+<div>M104 S215 <span style="color:#5FD08A">; nozzle</span></div>
+<div>M140 S60 &nbsp;<span style="color:#5FD08A">; bed</span></div>
+</div>
+<div style="margin:20px 24px;flex:1;border:1px dashed rgba(255,255,255,.22);background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 10px,transparent 10px 20px);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:11px;line-height:1.7;letter-spacing:.06em;color:#7f8079">[ FOTO ]<br>Edwin en campo /<br>pieza impresa<br><span style="color:#5a5b54">placeholder — subir</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Datenblatt · hoja de especificaciones en papel técnico</div>
+<div class="dv-card">
+<div style="width:900px;min-height:1010px;background:#E9E5DB;color:#1c1b18;font-family:'Space Grotesk',sans-serif;position:relative;overflow:hidden">
+<div style="position:absolute;inset:22px;border:1px solid #1c1b18;pointer-events:none"></div>
+<div style="position:absolute;inset:22px;pointer-events:none">
+<div style="position:absolute;top:-1px;left:120px;width:1px;height:14px;background:#1c1b18"></div>
+<div style="position:absolute;top:-1px;left:340px;width:1px;height:14px;background:#1c1b18"></div>
+<div style="position:absolute;bottom:-1px;left:220px;width:1px;height:14px;background:#1c1b18"></div>
+<div style="position:absolute;top:180px;left:-1px;width:14px;height:1px;background:#1c1b18"></div>
+</div>
+
+<div style="position:relative;margin:22px;border-bottom:1px solid #1c1b18;display:flex;align-items:stretch;justify-content:space-between">
+<div style="padding:16px 26px;display:flex;align-items:center;gap:16px;border-right:1px solid #1c1b18">
+<div style="width:38px;height:38px;background:#1c1b18;color:#E9E5DB;display:flex;align-items:center;justify-content:center;font:600 14px 'Saira Condensed';letter-spacing:.06em">ERA</div>
+<div style="font:400 10px 'IBM Plex Mono',monospace;letter-spacing:.12em;text-transform:uppercase;line-height:1.6"><div style="color:#8a3a2e">Doc. ERA-2026 / rev.03</div><div>Field Engineer — AM</div></div>
+</div>
+<div style="display:flex;align-items:center;gap:24px;padding:16px 26px">
+<div style="display:flex;gap:20px;font:500 12px 'Space Grotesk';color:#3a3833"><span>Work</span><span>Machines</span><span>About</span></div>
+<div style="display:flex;gap:5px;font:500 11px 'IBM Plex Mono',monospace"><span style="background:#8a3a2e;color:#E9E5DB;padding:2px 5px">EN</span><span style="color:#8a8579;padding:2px 5px">DE</span><span style="color:#8a8579;padding:2px 5px">ES</span></div>
+</div>
+</div>
+
+<div style="position:relative;display:grid;grid-template-columns:1fr 260px;margin:0 22px">
+<div style="padding:52px 40px 40px 30px">
+<div style="font:500 11px 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:#8a3a2e;margin-bottom:22px">Electronic Engineer · B.Sc. — Additive Manufacturing</div>
+<h1 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:74px;line-height:.94;letter-spacing:.004em;text-transform:uppercase">Machines,<br>understood down<br>to the <span style="color:#8a3a2e;font-style:normal;border-bottom:4px solid #8a3a2e">firmware.</span></h1>
+<p style="max-width:440px;margin:28px 0 0;font-family:'IBM Plex Serif',serif;font-size:16.5px;line-height:1.6;color:#3a3833">Most AM technicians operate the printer. Edwin engineers it — embedded systems, PLC/SPS and control loops behind FDM, SLA and LCD resin production.</p>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:40px;border:1px solid #1c1b18">
+<div style="padding:18px 20px;border-right:1px solid #1c1b18;border-bottom:1px solid #1c1b18"><div style="font-family:'Saira Condensed';font-weight:700;font-size:44px;line-height:.9;color:#8a3a2e">+35%</div><div style="font:400 11px 'IBM Plex Mono',monospace;color:#5a574f;margin-top:6px;line-height:1.5">productivity in tech support / 12 mo.</div></div>
+<div style="padding:18px 20px;border-bottom:1px solid #1c1b18"><div style="font-family:'Saira Condensed';font-weight:700;font-size:44px;line-height:.9">4+ yrs</div><div style="font:400 11px 'IBM Plex Mono',monospace;color:#5a574f;margin-top:6px;line-height:1.5">field engineering &amp; support</div></div>
+<div style="padding:18px 20px;border-right:1px solid #1c1b18"><div style="font:600 15px 'Space Grotesk'">R&amp;D unit</div><div style="font:400 11px 'IBM Plex Mono',monospace;color:#5a574f;margin-top:6px;line-height:1.5">founded engineering &amp; research area</div></div>
+<div style="padding:18px 20px"><div style="font:600 15px 'Space Grotesk'">CODESYS</div><div style="font:400 11px 'IBM Plex Mono',monospace;color:#5a574f;margin-top:6px;line-height:1.5">PLC/SPS → Inbetriebnahme</div></div>
+</div>
+
+<div style="display:flex;gap:14px;margin-top:36px">
+<div style="padding:13px 24px;background:#1c1b18;color:#E9E5DB;font:600 13px 'Space Grotesk';display:flex;align-items:center;gap:9px">Download CV — AM <span style="font-family:'IBM Plex Mono',monospace;font-size:11px">↓</span></div>
+<div style="padding:13px 24px;border:1px solid #1c1b18;font:600 13px 'Space Grotesk'">Get in touch</div>
+</div>
+</div>
+
+<div style="border-left:1px solid #1c1b18;padding:0;display:flex;flex-direction:column">
+<div style="padding:14px 18px;border-bottom:1px solid #1c1b18;font:400 9.5px 'IBM Plex Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#8a8579">Specimen · print bed</div>
+<div style="flex:1;min-height:280px;margin:0;background:repeating-linear-gradient(0deg,rgba(28,27,24,.09) 0 1px,transparent 1px 7px);border-bottom:1px solid #1c1b18;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px"><div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.7;letter-spacing:.05em;color:#6a675e">[ FOTO ]<br>pieza impresa /<br>Edwin en campo<br><span style="color:#a09b8f">placeholder</span></div></div>
+<div style="padding:14px 18px;font:400 10px 'IBM Plex Mono',monospace;line-height:1.9;color:#5a574f">
+<div style="display:flex;justify-content:space-between"><span>SYS</span><span>Stratasys</span></div>
+<div style="display:flex;justify-content:space-between"><span>SYS</span><span>Bambu Lab</span></div>
+<div style="display:flex;justify-content:space-between"><span>SYS</span><span>Formlabs</span></div>
+<div style="display:flex;justify-content:space-between"><span>SYS</span><span>Prusa</span></div>
+</div>
+</div>
+</div>
+
+<div style="position:relative;margin:0 22px;border-top:1px solid #1c1b18;display:flex;align-items:center;justify-content:space-between;padding:14px 30px;font:400 10px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:#5a574f">
+<span style="display:flex;align-items:center;gap:7px"><span style="width:7px;height:7px;border-radius:50%;background:#8a3a2e"></span>Open to work — DACH</span>
+<span>Frankfurt am Main · Chancenkarte · Deutsch B1</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Firmware · consola de arranque, fósforo verde</div>
+<div class="dv-card">
+<div style="width:900px;min-height:1010px;background:#0B0D0B;color:#cfd6cd;font-family:'IBM Plex Mono',monospace;position:relative;overflow:hidden">
+<div style="position:absolute;left:0;right:0;top:0;height:40px;background:linear-gradient(180deg,rgba(76,195,138,.10),transparent);animation:scanline 6s linear infinite;pointer-events:none"></div>
+<div style="position:absolute;right:34px;top:120px;width:220px;height:180px;pointer-events:none;opacity:.55">
+<div style="position:absolute;top:0;left:20px;width:1px;height:100px;background:rgba(76,195,138,.4)"></div>
+<div style="position:absolute;top:100px;left:20px;width:120px;height:1px;background:rgba(76,195,138,.4)"></div>
+<div style="position:absolute;top:100px;left:140px;width:1px;height:60px;background:rgba(76,195,138,.4)"></div>
+<div style="position:absolute;top:-4px;left:16px;width:9px;height:9px;background:#4CC38A"></div>
+<div style="position:absolute;top:156px;left:136px;width:9px;height:9px;border:1px solid #4CC38A"></div>
+<div style="position:absolute;top:60px;left:60px;width:6px;height:6px;background:rgba(76,195,138,.5)"></div>
+</div>
+
+<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 34px;border-bottom:1px solid rgba(76,195,138,.18)">
+<div style="display:flex;align-items:center;gap:12px;font-size:12px"><span style="color:#4CC38A">■</span><span style="letter-spacing:.1em;color:#e6ebe4">edwin@am-lab</span><span style="color:#5c6359">:~$</span></div>
+<div style="display:flex;align-items:center;gap:20px;font-size:11px;letter-spacing:.08em">
+<span style="color:#7d857a">work</span><span style="color:#7d857a">machines</span><span style="color:#7d857a">about</span>
+<span style="color:#4CC38A;border:1px solid rgba(76,195,138,.4);padding:2px 6px">EN</span><span style="color:#5c6359;padding:2px 6px">DE</span><span style="color:#5c6359;padding:2px 6px">ES</span>
+</div>
+</div>
+
+<div style="position:relative;padding:56px 40px 40px">
+<div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#4CC38A;margin-bottom:8px">$ ./whoami --role</div>
+<div style="font-size:12px;color:#6f766c;margin-bottom:30px">&gt; Electronic Engineer · industrial additive manufacturing · Frankfurt am Main</div>
+
+<h1 style="margin:0;font-family:'Saira Condensed',sans-serif;font-weight:600;font-size:78px;line-height:.94;letter-spacing:.01em;text-transform:uppercase;color:#EAF0E8">The technician who<br>reads the <span style="color:#4CC38A">schematic.</span><span style="display:inline-block;width:22px;height:60px;background:#4CC38A;margin-left:8px;transform:translateY(8px);animation:blink 1.1s steps(1) infinite"></span></h1>
+
+<p style="max-width:520px;margin:30px 0 0;font-family:'IBM Plex Serif',serif;font-size:17px;line-height:1.6;color:#aeb5aa">4+ years running FDM/FFF, SLA and LCD-resin production — and the only one in the room who can trace the fault from the sliced layer back through the firmware, the PLC and the board.</p>
+
+<div style="margin-top:38px;border:1px solid rgba(76,195,138,.22);background:rgba(76,195,138,.04)">
+<div style="padding:10px 16px;border-bottom:1px solid rgba(76,195,138,.16);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#7d857a">boot log</div>
+<div style="padding:14px 16px;font-size:12px;line-height:1.95;color:#9aa196">
+<div><span style="color:#4CC38A">[ ok ]</span> field engineering &amp; support ............ 4+ yrs</div>
+<div><span style="color:#4CC38A">[ ok ]</span> tech-support productivity ............... <span style="color:#EAF0E8">+35% / 12 mo</span></div>
+<div><span style="color:#4CC38A">[ ok ]</span> engineering &amp; research unit ............ founded</div>
+<div><span style="color:#4CC38A">[ ok ]</span> systems .... Stratasys · Bambu · Formlabs · Prusa</div>
+<div><span style="color:#e0b64a">[busy]</span> PLC/SPS · CODESYS ............ loading → Inbetriebnahme</div>
+</div>
+</div>
+
+<div style="display:flex;gap:14px;margin-top:34px;align-items:center">
+<div style="padding:13px 24px;background:#4CC38A;color:#0B0D0B;font-weight:600;font-size:13px;letter-spacing:.02em">download_cv_am.pdf ↓</div>
+<div style="padding:13px 24px;border:1px solid rgba(76,195,138,.4);color:#cfd6cd;font-size:13px;letter-spacing:.02em">./contact</div>
+<div style="margin-left:6px;font-size:11px;color:#6f766c">status: <span style="color:#4CC38A;animation:blink 2s infinite">● open to work — DACH</span></div>
+</div>
+
+<div style="margin-top:44px;display:flex;gap:26px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:#5c6359">
+<span>Chancenkarte work permit</span><span style="color:#33382f">/</span><span>Deutsch B1</span><span style="color:#33382f">/</span><span>FDM · SLA · LCD · SLS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Elige una y construyo la página completa trilingüe: "sigo con <a class="dv-oid" href="#1a">1a</a>" · "mezcla el hero de <a class="dv-oid" href="#1b">1b</a> con el acento verde de <a class="dv-oid" href="#1c">1c</a>" · "más opciones de dirección" · "cambia el titular de <a class="dv-oid" href="#1a">1a</a>"</p>
+</section>
+</x-dc>
+</body>
+</html>
